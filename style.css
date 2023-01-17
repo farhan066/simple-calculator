@@ -1,0 +1,103 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 57, 255);
+}
+p, a{
+    color: rgb(28, 28, 28);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+    border:  none;
+    border-radius: 6px;
+    color: #fff;
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 20px;
+    outline: none;
+}
+.screen{
+    grid-column: 1/-1;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    letter-spacing: .8px;
+    /* background-color: rgb(42, 27, 55); */
+    word-break: break-all;
+}
+.prev-num{
+    font-size: 13px;
+    color: rgb(208, 208, 208);
+}
+.current-num{
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: minmax(100px,auto) repeat(5, 50px);
+    padding: 15px;
+    border-radius: 7px;
+    grid-gap: 7px;
+    background-color: rgb(30, 20, 38);
+    box-shadow: 0px 20px 30px rgba(0,0,0,.3);
+}
+
+button{
+    background-color: rgb(66, 32, 96);
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    transition: .2s;
+}
+.btn-clear{
+    grid-column: span 2;
+    font-weight: bold;
+}
+.btn-equal{
+    grid-column: span 2;
+}
+.btn-del, .btn-operator, .btn-equal, .btn-clear{
+    color: rgb(245, 105, 255);
+}
+button:hover{
+    background-color: rgb(43, 28, 57);
+}
