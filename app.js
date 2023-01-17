@@ -61,7 +61,7 @@ class Calculator{
         if(this.operation != null){
             this.prevNumBox.innerText = `${this.prevNum} ${this.operation}`
         }else{
-            this.prevNumBox.innerText = " "
+            this.prevNumBox.innerText = ""
         }
     }
 }
